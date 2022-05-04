@@ -1,0 +1,7 @@
+com\mycompany\aplicando_strategy\estrategias\ImpostoIcms.class
+com\mycompany\aplicando_strategy\Aplicando_strategy.class
+com\mycompany\aplicando_strategy\Orcamento.class
+com\mycompany\aplicando_strategy\estrategias\Tipo.class
+com\mycompany\aplicando_strategy\estrategias\ImpostoStrategy.class
+com\mycompany\aplicando_strategy\CalculadorDeImposto.class
+com\mycompany\aplicando_strategy\estrategias\ImpostoIss.class
