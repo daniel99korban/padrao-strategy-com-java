@@ -5,8 +5,8 @@ package strategy_SO;
 public class SistemaMac implements SoStrategy{
     
     @Override
-    public void instalarSistemaOperacional() {
-        System.out.println("Instalando MacOS!");
+    public String instalarSistemaOperacional() {
         System.out.println("MacOs instalado com sucesso!");
+        return "MacOs";
     }
 }

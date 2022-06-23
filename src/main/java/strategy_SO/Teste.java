@@ -4,24 +4,29 @@ package strategy_SO;
  */
 public class Teste {
     public static void main(String[] args) {
-        // instanciar estrategias
-        var windows = new SistemaWindows();
-        var linux = new SistemaLinux();
-        var mac = new SistemaMac();
         
-        // criar o computador
-        var computador = new Computador();
+        // instanciar Sistemas Operacionais(estrategias)
+        SoStrategy windows = new SistemaWindows();
+        SoStrategy linux = new SistemaLinux();
+        SoStrategy mac = new SistemaMac();
+
+        var computador1 = new Computador();
         // escolher um SO
-        computador.setSistemaOperacional(windows);
-        computador.instalarSistemaOperacional();
-        // ======================================
+        computador1.setSistemaOperacional(windows);
+        computador1.instalarSistemaOperacional();
+        System.out.println("computador com : " + computador1.getSistemaOperacional() + " instalado");
         // escolher um outro SO
-        computador.setSistemaOperacional(mac);
-        computador.instalarSistemaOperacional();
         // ======================================
-        // escolher um outro SO
-        computador.setSistemaOperacional(linux);
-        computador.instalarSistemaOperacional();
+        computador1.setSistemaOperacional(linux);
+        computador1.instalarSistemaOperacional();
+        System.out.println("computador agora com : " + computador1.getSistemaOperacional() + " instalado");
+        
+        var macbook = new Computador();
+        // escolher um SO
+        // ======================================
+        macbook.setSistemaOperacional(mac);
+        macbook.instalarSistemaOperacional();
+        System.out.println("computador2 com : " + macbook.getSistemaOperacional() + " instalado");
         // ======================================
         
     }

@@ -5,9 +5,9 @@ package strategy_SO;
 public class SistemaWindows implements SoStrategy{
 
     @Override
-    public void instalarSistemaOperacional() {
-        System.out.println("Instalando Windows!");
+    public String instalarSistemaOperacional() {
         System.out.println("Windows instalado com sucesso!");
+        return "Windows";
     }
     
 }

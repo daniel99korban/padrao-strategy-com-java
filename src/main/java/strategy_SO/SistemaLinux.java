@@ -5,9 +5,9 @@ package strategy_SO;
 public class SistemaLinux implements SoStrategy{
 
     @Override
-    public void instalarSistemaOperacional() {
-        System.out.println("Instalando Linux!");
+    public String instalarSistemaOperacional() {
         System.out.println("Linux instalado com sucesso!");
+        return "Linux";
     }
     
 }
