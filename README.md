@@ -1,4 +1,5 @@
 # padrao-strategy-com-java
+Aplicação do padrão strategy com sistemas operacionais
 
 ## Classe de testes
 <br>
